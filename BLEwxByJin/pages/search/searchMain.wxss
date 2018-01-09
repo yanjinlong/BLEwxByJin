@@ -1,0 +1,76 @@
+/* pages/search/searchMain.wxss */
+view {
+  display: inline-block;
+}
+
+.container {
+  padding: 0;
+  margin: 0;
+  align-items: flex-start;
+  border-top: 1rpx solid #C8C7CC;
+}
+
+.section {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  border-bottom: 1rpx solid #C8C7CC;
+  height: 60px;
+  padding: 5px;
+  margin-left: 15px;
+}
+
+.isOK {
+  background-color: #0f0;
+}
+
+.isNG {
+  background-color: #f00;
+}
+
+.list-item text {
+   margin-top: 10rpx;
+   font-size: 14px;
+}
+
+.list-item .rssi {
+  position: absolute;
+  right: 5px;
+  line-height: 50px;
+  color: #999;
+}
+
+/* 底部总计 */
+.bottomTotal {
+  background-color: #C06E4F;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 30px;
+  _position: absolute;
+}
+
+.bottomTotal text {
+  font-size: 12px;
+  line-height: 30px;
+}
+
+.bottomTotal .left {
+  margin-left: 5px;
+}
+
+.bottomTotal .right {
+  position: absolute;
+  right: 5px;
+}
+
+.bottomTotal .center {
+  position: absolute;
+  left: 48%;
+}

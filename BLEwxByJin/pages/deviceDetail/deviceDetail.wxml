@@ -1,0 +1,51 @@
+<!--pages/deviceDetail/deviceDetail.wxml-->
+<view class="container">
+  <view class='section'>
+    <view class="sectionHeader">
+      <text>Device Info</text>
+    </view>
+    <view class="list-item">
+      <text>设备名称</text>
+      <text class='subtext'>{{device.name}}</text>
+    </view>
+    <view class="list-item">
+      <text>MAC地址</text>
+      <text class='subtext'>{{device.macAddress}}</text>
+    </view>
+    <view class="list-item">
+      <text>序列号</text>
+      <text class='subtext'>{{device.serialNumberPrefix}}【{{device.serialNumber}}】{{device.serialNumberSuffix}}</text>
+    </view>
+    <view class="list-item">
+      <text>固件版本号</text>
+      <text class='subtext'>{{device.firmware}}</text>
+    </view>
+    <view class="list-item">
+      <text>电池电量</text>
+      <text class='subtext'>{{device.battery}}</text>
+    </view>
+    <view class="list-item">
+      <text>条形码</text>
+      <view class="barcode">
+        <canvas canvas-id="barcode" />
+      </view>
+    </view>
+  </view>
+  <view class='section'>
+    <view class="sectionHeader">
+      <text>Function</text>
+    </view>
+    <view class='function'>
+      <text>{{functionDesc}}</text>
+    </view>
+    <view class='function'>
+      <button class='btn_ok' bindtap='okButtonOnClick'>OK</button>
+      <button class='btn_ng' bindtap='ngButtonOnClick'>NG</button>
+    </view>
+  </view>
+  <view class='bottomTotal'>
+    <text class='left'>总数：{{testTotal}}</text>
+    <text class='center'>OK：{{okTotal}}</text>
+    <text class='right'>良品率：{{oklv}}%</text>
+  </view>
+</view>

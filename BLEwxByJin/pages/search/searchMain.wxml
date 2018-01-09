@@ -1,0 +1,17 @@
+<!--pages/search/searchMain.wxml-->
+<view class="container">
+  <block wx:for="{{devices}}" wx:key="{{device}}">
+    <view class="section {{item.isOK == 1 ? 'isOK' : item.isOK == 2 ? 'isNG' : ''}}" hidden="{{!isbluetoothready}}">
+      <view class="list-item" id="{{item.deviceId}}" type="default" size="mini" bindtap="connectTO">
+        <text>{{item.name}}</text>
+        <text>{{item.serialNumberPrefix}}【{{item.serialNumber}}】{{item.serialNumberSuffix}}</text>
+        <text class='rssi'>{{item.RSSI}}</text>
+      </view>
+    </view>
+  </block>
+  <view class='bottomTotal'>
+    <text class='left'>总数：{{testTotal}}</text>
+    <text class='center'>OK：{{okTotal}}</text>
+    <text class='right'>良品率：{{oklv}}%</text>
+  </view>
+</view>

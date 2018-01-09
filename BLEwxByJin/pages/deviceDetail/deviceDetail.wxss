@@ -1,0 +1,100 @@
+/* pages/deviceDetail/deviceDetail.wxss */
+view {
+  display: inline-block;
+}
+
+.container {
+  padding: 0;
+  margin: 0;
+  align-items: flex-start;
+  border-top: 1rpx solid #C8C7CC;
+}
+
+.section {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+}
+
+.sectionHeader {
+  font-weight: bold;
+  background-color: #ddd;
+  /* padding-left: 15px; */
+  height: 30px;
+  width: 100%;
+  border-bottom: 1rpx solid #C8C7CC;
+  line-height: 30px;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  border-bottom: 1rpx solid #C8C7CC;
+  height: 50px;
+  padding: 5px;
+  margin-left: 15px;
+}
+
+.list-item text {
+  line-height: 40px;
+}
+
+.list-item .subtext {
+  position: absolute;
+  right: 5px;
+  line-height: 40px;
+  color: #999;
+}
+
+.barcode {
+  position: absolute;
+  right: 0px;
+  /* width: 250px; */
+}
+
+.function {
+  text-align: center;
+  width: 100%;
+}
+
+.function .btn_ok {
+  width: 80px;
+  float: left;
+  margin-left: 80px;
+}
+
+.function .btn_ng {
+  width: 80px;
+  float: right;
+  margin-right: 80px;
+}
+
+/* 底部总计 */
+.bottomTotal {
+  background-color: #C06E4F;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 30px;
+  _position: absolute;
+}
+
+.bottomTotal text {
+  font-size: 12px;
+  line-height: 30px;
+}
+
+.bottomTotal .left {
+  margin-left: 5px;
+}
+
+.bottomTotal .right {
+  position: absolute;
+  right: 5px;
+}
+
+.bottomTotal .center {
+  position: absolute;
+  left: 48%;
+}
